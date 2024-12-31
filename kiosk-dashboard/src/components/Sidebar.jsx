@@ -62,8 +62,8 @@ function Sidebar() {
                         className={`nav-link ${isActive('/store-special') ? 'active bg-gradient-dark text-white' : 'text-dark'}`}
                         to="/store-special"
                     >
-                        <i className="material-symbols-rounded opacity-5">format_textdirection_r_to_l</i>
-                        <span className="nav-link-text ms-1">Store Specials</span>
+                    <i className="material-symbols-rounded opacity-5">view_in_ar</i>                        
+                    <span className="nav-link-text ms-1">Store Specials</span>
                     </Link>
                     </li>
 

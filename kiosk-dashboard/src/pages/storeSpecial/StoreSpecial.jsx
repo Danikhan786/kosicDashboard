@@ -1,26 +1,26 @@
 import React from 'react'
-import Navbar from '../components/Navbar';
-import Sidebar from '../components/Sidebar';
-import Footer from '../components/Footer';
+import Navbar from '../../components/Navbar';
+import Sidebar from '../../components/Sidebar';
+import Footer from '../../components/Footer';
 import { Link } from 'react-router-dom';
-function Assets() {
+function StoreSpecial() {
   return (
     <>
         <Sidebar/>
         <main className="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
-        <Navbar/>
+             <Navbar/>
             <div className="container-fluid py-2">
                 <div className="row">
                     <div className="col-12">
                         <div className="card my-4">
                             <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                                 <div className="bg-gradient-dark shadow-dark border-radius-lg pt-4 pb-3">
-                                    <h6 className="text-white text-capitalize ps-3">All Assets table</h6>
+                                    <h6 className="text-white text-capitalize ps-3">Store Special table</h6>
                                 </div>
                             </div>
                             <div className="card-body px-0 pb-2">
                                 <div className="text-end m-4">
-                                        <Link className="btn btn-secondary" to="">Add Play List</Link>
+                                        <Link className="btn btn-secondary" to="/add-store-special">Add Play List</Link>
                                 </div>
                                 <div className="table-responsive p-0">
                                         <table className="table align-items-center mb-0">
@@ -29,7 +29,7 @@ function Assets() {
                                                 <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No</th>
                                                 <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Name</th>
                                                 <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Decription</th>
-                                                <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Asset</th>
+                                                <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Total Assets</th>
                                                 <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Action</th>
                                                 <th className="text-secondary opacity-7"></th>
                                                 </tr>
@@ -46,12 +46,10 @@ function Assets() {
                                                         <p className="text-xs text-secondary mb-0">Organization</p>
                                                     </td>
                                                     <td className="align-middle text-center text-sm">
-                                                        <div>
-                                                            <img src="../assets/img/team-2.jpg" className="me-3 border-radius-lg" alt="user1" width={"10%"}/>
-                                                        </div>
+                                                        <p className="text-xs text-secondary mb-0">4</p>
                                                     </td>
                                                     <td className="align-middle">
-                                                        <Link href="" className="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                                                        <Link to="/edit-store-special" className="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
                                                             <i class="fa-solid fa-pen-to-square fs-5 me-3"></i>
                                                         </Link>
                                                         <Link href="" className="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
@@ -73,7 +71,7 @@ function Assets() {
         </main>
         <Footer/>
     </>
-  );
+  )
 }
 
-export default Assets
+export default StoreSpecial
